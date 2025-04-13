@@ -89,16 +89,7 @@ export default function App() {
             </div>
 
             <PitchTypeSelect
-              pitchTypes={[
-                "4-Seam Fastball",
-                "Sinker",
-                "Slider",
-                "Cutter",
-                "Changeup",
-                "Curveball",
-                "Split-Finger",
-                "Sweeper",
-              ]}
+              pitchTypes={pitchTypes}
               selected={pitchType}
               onSelect={setPitchType}
             />
