@@ -14,7 +14,7 @@ export default function App() {
 
   useEffect(() => {
     if (pitcher) {
-      fetch(`http://basedball.onrender.com/api/pitch-types/${pitcher}`)
+      fetch(`http://basedball.onrender.com/api/pitch-types/${pitcher.name}`)
         .then((res) => res.json())
         .then((data) => setPitchTypes(data));
     }

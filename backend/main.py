@@ -132,5 +132,5 @@ def get_pitch_types(pitcher_name: str):
         return []
 
     df = statcast_pitcher("2023-01-01", str(date.today()), player_id=pitcher_id)
-    pitch_types = df["pitch_type"].dropna().unique().tolist()
+    pitch_types = df["pitch_name"].dropna().unique().tolist()
     return sorted(pitch_types)
