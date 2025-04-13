@@ -6,13 +6,13 @@ from datetime import date
 from dateutil.relativedelta import relativedelta
 from pybaseball import statcast_batter, statcast_pitcher, playerid_reverse_lookup, playerid_reverse_lookup
 from collections import defaultdict
-
+import os
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:5173"],
     allow_methods=["*"],
     allow_headers=["*"],
 )

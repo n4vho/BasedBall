@@ -32,11 +32,20 @@ def update_cache():
     batters = merge_ids_with_names(df, "batter", "batter")
     pitchers = merge_ids_with_names(df, "pitcher", "pitcher")
 
-    with open("data/batters.json", "w") as f:
-        json.dump(batters, f)
+    # Check if the 'data' directory exists, and create it if it doesn't
+    if not os.path.exists("data"):
+        os.makedirs("data")
 
-    with open("data/pitchers.json", "w") as f:
-        json.dump(pitchers, f)
+     # Generate batters.json if it doesn't exist
+    batters_file_path = "data/batters.json"
+    if not os.path.exists(batters_file_path):
+        with open(batters_file_path, "w") as f:
+            json.dump(batters, f)
+    # Generate pitchers.json if it doesn't exist
+    pitchers_file_path = "data/pitchers.json"
+    if not os.path.exists(pitchers_file_path):
+        with open(pitchers_file_path, "w") as f:
+            json.dump(pitchers, f)
 
     print(f"[✓] Saved {len(batters)} batters and {len(pitchers)} pitchers.")
 
