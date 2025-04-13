@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+pandas
+pybaseball
+python-multipart
+requests
