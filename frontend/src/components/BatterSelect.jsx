@@ -5,7 +5,7 @@ export default function BatterSelect({ onSelect }) {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
-    fetch("http://basedball.onrender.com/api/players/batters")
+    fetch("https://basedball.onrender.com/api/players/batters")
       .then(res => res.json())
       .then(setPlayers);
   }, []);

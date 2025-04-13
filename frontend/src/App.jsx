@@ -14,7 +14,7 @@ export default function App() {
 
   useEffect(() => {
     if (pitcher) {
-      fetch(`http://basedball.onrender.com/api/pitch-types/${pitcher.name}`)
+      fetch(`https://basedball.onrender.com/api/pitch-types/${pitcher.name}`)
         .then((res) => res.json())
         .then((data) => setPitchTypes(data));
     }
@@ -31,7 +31,7 @@ export default function App() {
     console.log("Sending payload:", payload); // inspect this in browser console
   
     try {
-      const res = await fetch("http://basedball.onrender.com/api/matchup", {
+      const res = await fetch("https://basedball.onrender.com/api/matchup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
