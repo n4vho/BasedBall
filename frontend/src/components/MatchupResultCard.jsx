@@ -32,8 +32,9 @@ export default function MatchupResultCard({ batter, pitcher, result }) {
     return (
       <div className="bg-gray-800 text-white p-8 rounded-lg shadow-xl mt-10 max-w-xl mx-auto border border-gray-700">
         <h2 className="text-2xl font-semibold mb-6 text-center">
-          Matchup Result: <span className="text-blue-400">{batter}</span> vs <span className="text-rose-400">{pitcher}</span>
+        Matchup Result: <span className="text-blue-400">{batter.name}</span> vs <span className="text-rose-400">{pitcher.name}</span>
         </h2>
+
         <div className="space-y-4 text-lg">
           {Object.entries(result).map(([key, value]) => (
             <div key={key} className="flex justify-between">
