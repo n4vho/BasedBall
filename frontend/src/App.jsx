@@ -14,7 +14,7 @@ export default function App() {
 
   useEffect(() => {
     if (pitcher) {
-      fetch(`http://localhost:8000/api/pitch-types/${pitcher}`)
+      fetch(`http://basedball.onrender.com/api/pitch-types/${pitcher}`)
         .then((res) => res.json())
         .then((data) => setPitchTypes(data));
     }
@@ -31,7 +31,7 @@ export default function App() {
     console.log("Sending payload:", payload); // inspect this in browser console
   
     try {
-      const res = await fetch("http://localhost:8000/api/matchup", {
+      const res = await fetch("http://basedball.onrender.com/api/matchup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -123,13 +123,3 @@ export default function App() {
     </div>
   );
 }
-
-// export default function App() {
-//   return (
-//     <div className="h-screen bg-gradient-to-br from-blue-800 via-black to-gray-900 text-white flex items-center justify-center">
-//       <h1 className="text-6xl font-extrabold text-center tracking-tight">
-//         ✅ Tailwind is NOW Working!
-//       </h1>
-//     </div>
-//   );
-// }
