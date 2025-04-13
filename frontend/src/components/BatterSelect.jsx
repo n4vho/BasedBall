@@ -1,42 +1,69 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
+
+function normalize(str) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
 
 export default function BatterSelect({ onSelect }) {
   const [query, setQuery] = useState("");
-  const [players, setPlayers] = useState([]);
+  const [batters, setBatters] = useState([]);
+  const [filtered, setFiltered] = useState([]);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const inputRef = useRef(null);
 
   useEffect(() => {
     fetch("https://basedball.onrender.com/api/players/batters")
-      .then(res => res.json())
-      .then(setPlayers);
+      .then((res) => res.json())
+      .then((data) => {
+        setBatters(data);
+        setFiltered(data);
+      });
   }, []);
 
-  const filtered = players
-    .filter(p => p.name.toLowerCase().startsWith(query.toLowerCase()))
-    .slice(0, 5);
+  useEffect(() => {
+    const search = normalize(query);
+    setFiltered(
+      batters.filter((b) => normalize(b.name).includes(search)).slice(0, 5)
+    );
+  }, [query, batters]);
 
-  const handleSelect = (player) => {
-    onSelect(player);
-    setQuery(player.name);
-  };
+  function handleSelect(batter) {
+    setQuery(batter.name);
+    setShowDropdown(false);
+    onSelect(batter);
+  }
+
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (!inputRef.current.contains(e.target)) {
+        setShowDropdown(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
-    <div className="relative">
+    <div className="relative" ref={inputRef}>
       <input
-        type="text"
+        className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none"
         placeholder="Search batter..."
-        className="w-full px-4 py-2 rounded bg-gray-800 text-white border border-gray-600"
         value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => {
+          setQuery(e.target.value);
+          setShowDropdown(true);
+        }}
+        onFocus={() => setShowDropdown(true)}
       />
-      {filtered.length > 0 && (
-        <ul className="absolute z-10 mt-1 bg-gray-900 border border-gray-700 rounded w-full max-h-48 overflow-y-auto">
-          {filtered.map((p) => (
+      {showDropdown && (
+        <ul className="absolute z-10 w-full bg-gray-800 border border-gray-600 rounded mt-1 max-h-40 overflow-y-auto">
+          {filtered.map((batter) => (
             <li
-              key={p.player_id}
-              onClick={() => handleSelect(p)}
-              className="px-4 py-2 hover:bg-blue-600 cursor-pointer"
+              key={batter.player_id}
+              className="p-2 hover:bg-gray-700 cursor-pointer"
+              onClick={() => handleSelect(batter)}
             >
-              {p.name}
+              {batter.name}
             </li>
           ))}
         </ul>
