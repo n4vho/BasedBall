@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import json, os, time
@@ -10,6 +10,10 @@ from routes import batter_profile, pitcher_profile
 import numpy as np
 import pandas as pd, time
 import pandas.errors as pderr
+import subprocess, secrets
+
+CRON_TOKEN = os.getenv("CRON_TOKEN", "")
+
 
 app = FastAPI()
 
@@ -33,6 +37,15 @@ class MatchupRequest(BaseModel):
     batter: str
     pitcher: str
     pitch_type: str = ""
+
+@app.post("/api/rebuild-league-avg")
+def rebuild_league_avg(authorization: str = Header(default="")):
+    # basic protection so randos can't trigger it
+    if not CRON_TOKEN or not authorization.endswith(CRON_TOKEN):
+        return {"ok": False, "error": "unauthorized"}
+    subprocess.run(["python", os.path.join("scripts", "build_league_avgs.py")], check=False)
+    return {"ok": True}
+
 
 @app.get("/api/players/batters")
 def get_batters():
