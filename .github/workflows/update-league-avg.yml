@@ -32,7 +32,7 @@ jobs:
 
       - name: Build league averages
         run: |
-          python scripts/build_league_avgs.py
+          python scripts/build_league_avg.py
         env:
           PYTHONUNBUFFERED: "1"
 
