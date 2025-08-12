@@ -1,0 +1,59 @@
+name: Update league averages (daily)
+
+on:
+  schedule:
+    - cron: "0 12 * * *"   # 12:00 UTC = 8:00 AM ET
+  workflow_dispatch:        # allow manual run from Actions tab
+
+permissions:
+  contents: write           # allow committing back to the repo
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend   # everything runs in /backend
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Install just what the script needs (faster than full backend deps)
+      - name: Install minimal deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pybaseball pandas numpy python-dateutil
+
+      - name: Build league averages
+        run: |
+          python scripts/build_league_avgs.py
+        env:
+          PYTHONUNBUFFERED: "1"
+
+      - name: Show diff (for debugging)
+        run: |
+          git status --porcelain
+          if [ -f data/league_avg.json ]; then
+            echo "league_avg.json size:"
+            wc -c data/league_avg.json
+          fi
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet --exit-code; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git add data/league_avg.json
+          git commit -m "chore: update league averages ($(date -u +'%Y-%m-%d'))"
+          git push
