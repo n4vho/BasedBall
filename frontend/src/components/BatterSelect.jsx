@@ -12,7 +12,8 @@ export default function BatterSelect({ onSelect }) {
   const inputRef = useRef(null);
 
   useEffect(() => {
-    fetch("https://basedball.onrender.com/api/players/batters")
+    // fetch("https://basedball.onrender.com/api/players/batters")
+    fetch("/api/players/batters")
       .then((res) => res.json())
       .then((data) => {
         setBatters(data);

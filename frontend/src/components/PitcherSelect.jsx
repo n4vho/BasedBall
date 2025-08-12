@@ -12,7 +12,8 @@ export default function PitcherSelect({ onSelect }) {
   const wrapperRef = useRef(null);
 
   useEffect(() => {
-    fetch("https://basedball.onrender.com/api/players/pitchers")
+    // fetch("https://basedball.onrender.com/api/players/pitchers")
+    fetch("/api/players/pitchers")
       .then((res) => res.json())
       .then((data) => {
         setPitchers(data);
