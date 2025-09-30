@@ -1,5 +1,5 @@
 {
-  "computed_on": "2025-09-29",
+  "computed_on": "2025-09-30",
   "overall": {
     "swinging_strike": 0.110528,
     "called_strike": 0.162689,
@@ -132,14 +132,14 @@
       "popup": 0.008353
     },
     "Slider": {
-      "swinging_strike": 0.154335,
-      "called_strike": 0.14551,
-      "foul": 0.163707,
-      "ball": 0.324335,
-      "ground_ball": 0.070896,
-      "fly_ball": 0.046314,
-      "line_drive": 0.039993,
-      "popup": 0.012378
+      "swinging_strike": 0.154325,
+      "called_strike": 0.145527,
+      "foul": 0.163699,
+      "ball": 0.324356,
+      "ground_ball": 0.070895,
+      "fly_ball": 0.04632,
+      "line_drive": 0.039961,
+      "popup": 0.012379
     },
     "Slow Curve": {
       "swinging_strike": 0.071233,
@@ -172,14 +172,14 @@
       "popup": 0.008842
     },
     "Sweeper": {
-      "swinging_strike": 0.135358,
-      "called_strike": 0.162539,
-      "foul": 0.15497,
-      "ball": 0.354379,
-      "ground_ball": 0.056638,
-      "fly_ball": 0.050762,
-      "line_drive": 0.036422,
-      "popup": 0.015487
+      "swinging_strike": 0.135382,
+      "called_strike": 0.162498,
+      "foul": 0.154989,
+      "ball": 0.354328,
+      "ground_ball": 0.056643,
+      "fly_ball": 0.050749,
+      "line_drive": 0.036491,
+      "popup": 0.015483
     }
   }
 }
