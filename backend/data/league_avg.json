@@ -1,55 +1,55 @@
 {
-  "computed_on": "2025-10-07",
+  "computed_on": "2025-10-08",
   "overall": {
     "swinging_strike": 0.110663,
-    "called_strike": 0.162695,
-    "foul": 0.189084,
-    "ball": 0.33626,
-    "ground_ball": 0.074569,
-    "fly_ball": 0.046612,
-    "line_drive": 0.041973,
-    "popup": 0.012302
+    "called_strike": 0.162678,
+    "foul": 0.189088,
+    "ball": 0.336268,
+    "ground_ball": 0.074565,
+    "fly_ball": 0.046609,
+    "line_drive": 0.041978,
+    "popup": 0.012305
   },
   "by_pitch": {
     "4-Seam Fastball": {
-      "swinging_strike": 0.090624,
-      "called_strike": 0.171473,
-      "foul": 0.230807,
-      "ball": 0.335605,
-      "ground_ball": 0.052918,
-      "fly_ball": 0.054848,
-      "line_drive": 0.042218,
-      "popup": 0.014901
+      "swinging_strike": 0.090613,
+      "called_strike": 0.171442,
+      "foul": 0.230845,
+      "ball": 0.335603,
+      "ground_ball": 0.052921,
+      "fly_ball": 0.054862,
+      "line_drive": 0.0422,
+      "popup": 0.014905
     },
     "Changeup": {
-      "swinging_strike": 0.148049,
-      "called_strike": 0.088845,
-      "foul": 0.162457,
-      "ball": 0.365169,
-      "ground_ball": 0.094354,
-      "fly_ball": 0.042388,
-      "line_drive": 0.043539,
-      "popup": 0.011228
+      "swinging_strike": 0.147996,
+      "called_strike": 0.088826,
+      "foul": 0.16255,
+      "ball": 0.365152,
+      "ground_ball": 0.094358,
+      "fly_ball": 0.04238,
+      "line_drive": 0.043544,
+      "popup": 0.011232
     },
     "Curveball": {
-      "swinging_strike": 0.122675,
-      "called_strike": 0.18126,
-      "foul": 0.142803,
-      "ball": 0.352084,
-      "ground_ball": 0.068047,
-      "fly_ball": 0.036432,
-      "line_drive": 0.034616,
-      "popup": 0.007722
+      "swinging_strike": 0.122633,
+      "called_strike": 0.181313,
+      "foul": 0.14283,
+      "ball": 0.352059,
+      "ground_ball": 0.068042,
+      "fly_ball": 0.0364,
+      "line_drive": 0.034661,
+      "popup": 0.007739
     },
     "Cutter": {
-      "swinging_strike": 0.101136,
-      "called_strike": 0.163237,
-      "foul": 0.206634,
-      "ball": 0.329671,
-      "ground_ball": 0.072452,
-      "fly_ball": 0.050338,
-      "line_drive": 0.044598,
-      "popup": 0.015631
+      "swinging_strike": 0.101183,
+      "called_strike": 0.1632,
+      "foul": 0.20664,
+      "ball": 0.329684,
+      "ground_ball": 0.072417,
+      "fly_ball": 0.050309,
+      "line_drive": 0.044605,
+      "popup": 0.015663
     },
     "Eephus": {
       "swinging_strike": 0.018163,
@@ -72,14 +72,14 @@
       "popup": 0.01107
     },
     "Knuckle Curve": {
-      "swinging_strike": 0.158404,
-      "called_strike": 0.151495,
-      "foul": 0.14475,
-      "ball": 0.327536,
-      "ground_ball": 0.078999,
-      "fly_ball": 0.030884,
-      "line_drive": 0.034135,
-      "popup": 0.004308
+      "swinging_strike": 0.158513,
+      "called_strike": 0.151304,
+      "foul": 0.144986,
+      "ball": 0.327717,
+      "ground_ball": 0.07873,
+      "fly_ball": 0.030779,
+      "line_drive": 0.034343,
+      "popup": 0.004293
     },
     "Knuckleball": {
       "swinging_strike": 0.057554,
@@ -122,24 +122,24 @@
       "popup": 0.0
     },
     "Sinker": {
-      "swinging_strike": 0.054843,
-      "called_strike": 0.221915,
-      "foul": 0.185989,
-      "ball": 0.311814,
-      "ground_ball": 0.116874,
-      "fly_ball": 0.037358,
-      "line_drive": 0.047941,
-      "popup": 0.008326
+      "swinging_strike": 0.054833,
+      "called_strike": 0.221933,
+      "foul": 0.185919,
+      "ball": 0.311799,
+      "ground_ball": 0.116884,
+      "fly_ball": 0.037376,
+      "line_drive": 0.047987,
+      "popup": 0.00832
     },
     "Slider": {
-      "swinging_strike": 0.154266,
-      "called_strike": 0.145627,
-      "foul": 0.163966,
-      "ball": 0.324157,
-      "ground_ball": 0.07084,
-      "fly_ball": 0.046286,
-      "line_drive": 0.039962,
-      "popup": 0.012386
+      "swinging_strike": 0.154255,
+      "called_strike": 0.145637,
+      "foul": 0.163952,
+      "ball": 0.324171,
+      "ground_ball": 0.07087,
+      "fly_ball": 0.046256,
+      "line_drive": 0.039957,
+      "popup": 0.012398
     },
     "Slow Curve": {
       "swinging_strike": 0.071233,
@@ -152,34 +152,34 @@
       "popup": 0.013699
     },
     "Slurve": {
-      "swinging_strike": 0.132592,
-      "called_strike": 0.167299,
-      "foul": 0.146692,
-      "ball": 0.35141,
-      "ground_ball": 0.069143,
-      "fly_ball": 0.037961,
-      "line_drive": 0.033894,
-      "popup": 0.010575
+      "swinging_strike": 0.132556,
+      "called_strike": 0.167254,
+      "foul": 0.146652,
+      "ball": 0.351315,
+      "ground_ball": 0.069124,
+      "fly_ball": 0.037951,
+      "line_drive": 0.033885,
+      "popup": 0.010572
     },
     "Split-Finger": {
-      "swinging_strike": 0.16994,
-      "called_strike": 0.073715,
-      "foul": 0.169698,
-      "ball": 0.355884,
-      "ground_ball": 0.094609,
-      "fly_ball": 0.035241,
-      "line_drive": 0.038514,
-      "popup": 0.009012
+      "swinging_strike": 0.170091,
+      "called_strike": 0.073663,
+      "foul": 0.169526,
+      "ball": 0.356085,
+      "ground_ball": 0.09449,
+      "fly_ball": 0.035197,
+      "line_drive": 0.038466,
+      "popup": 0.009001
     },
     "Sweeper": {
-      "swinging_strike": 0.135805,
-      "called_strike": 0.162205,
-      "foul": 0.154963,
-      "ball": 0.354268,
-      "ground_ball": 0.056663,
-      "fly_ball": 0.050772,
-      "line_drive": 0.036501,
-      "popup": 0.015527
+      "swinging_strike": 0.135799,
+      "called_strike": 0.162191,
+      "foul": 0.154912,
+      "ball": 0.354326,
+      "ground_ball": 0.056664,
+      "fly_ball": 0.050814,
+      "line_drive": 0.036489,
+      "popup": 0.015503
     }
   }
 }
