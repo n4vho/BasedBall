@@ -1,8 +1,8 @@
 {
-  "computed_on": "2025-10-21",
+  "computed_on": "2025-10-22",
   "overall": {
-    "swinging_strike": 0.110769,
-    "called_strike": 0.162651,
+    "swinging_strike": 0.11077,
+    "called_strike": 0.16265,
     "foul": 0.189086,
     "ball": 0.336191,
     "ground_ball": 0.074563,
@@ -12,8 +12,8 @@
   },
   "by_pitch": {
     "4-Seam Fastball": {
-      "swinging_strike": 0.090701,
-      "called_strike": 0.171417,
+      "swinging_strike": 0.090705,
+      "called_strike": 0.171413,
       "foul": 0.230856,
       "ball": 0.335497,
       "ground_ball": 0.052902,
