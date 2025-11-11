@@ -1,5 +1,5 @@
 {
-  "computed_on": "2025-11-10",
+  "computed_on": "2025-11-11",
   "overall": {
     "swinging_strike": 0.110798,
     "called_strike": 0.162628,
@@ -13,10 +13,10 @@
   "by_pitch": {
     "4-Seam Fastball": {
       "swinging_strike": 0.090692,
-      "called_strike": 0.171478,
-      "foul": 0.230846,
-      "ball": 0.335434,
-      "ground_ball": 0.052838,
+      "called_strike": 0.171482,
+      "foul": 0.230845,
+      "ball": 0.335436,
+      "ground_ball": 0.052834,
       "fly_ball": 0.054893,
       "line_drive": 0.042233,
       "popup": 0.014972
@@ -32,14 +32,14 @@
       "popup": 0.011177
     },
     "Curveball": {
-      "swinging_strike": 0.12277,
-      "called_strike": 0.181381,
-      "foul": 0.1431,
-      "ball": 0.351643,
-      "ground_ball": 0.068011,
-      "fly_ball": 0.036374,
-      "line_drive": 0.03477,
-      "popup": 0.007645
+      "swinging_strike": 0.122763,
+      "called_strike": 0.18137,
+      "foul": 0.143092,
+      "ball": 0.35168,
+      "ground_ball": 0.068007,
+      "fly_ball": 0.036372,
+      "line_drive": 0.034768,
+      "popup": 0.007644
     },
     "Cutter": {
       "swinging_strike": 0.101106,
@@ -123,11 +123,11 @@
     },
     "Sinker": {
       "swinging_strike": 0.0549,
-      "called_strike": 0.221651,
-      "foul": 0.186127,
-      "ball": 0.31186,
-      "ground_ball": 0.116727,
-      "fly_ball": 0.037395,
+      "called_strike": 0.221644,
+      "foul": 0.186129,
+      "ball": 0.311854,
+      "ground_ball": 0.116737,
+      "fly_ball": 0.037396,
       "line_drive": 0.047972,
       "popup": 0.008362
     },
@@ -172,14 +172,14 @@
       "popup": 0.009027
     },
     "Sweeper": {
-      "swinging_strike": 0.136067,
-      "called_strike": 0.162084,
-      "foul": 0.154895,
-      "ball": 0.354097,
-      "ground_ball": 0.056693,
-      "fly_ball": 0.050941,
-      "line_drive": 0.036447,
-      "popup": 0.015491
+      "swinging_strike": 0.136075,
+      "called_strike": 0.162094,
+      "foul": 0.154904,
+      "ball": 0.35406,
+      "ground_ball": 0.056696,
+      "fly_ball": 0.050944,
+      "line_drive": 0.036449,
+      "popup": 0.015492
     },
     "Unknown": {
       "swinging_strike": 0.0,
