@@ -1,13 +1,13 @@
 {
-  "computed_on": "2025-11-19",
+  "computed_on": "2025-11-20",
   "overall": {
     "swinging_strike": 0.110416,
     "called_strike": 0.162068,
     "foul": 0.188439,
     "ball": 0.334989,
-    "ground_ball": 0.074287,
+    "ground_ball": 0.074288,
     "fly_ball": 0.046434,
-    "line_drive": 0.041833,
+    "line_drive": 0.041832,
     "popup": 0.012265
   },
   "by_pitch": {
@@ -136,9 +136,9 @@
       "called_strike": 0.145608,
       "foul": 0.163997,
       "ball": 0.324085,
-      "ground_ball": 0.071033,
+      "ground_ball": 0.071042,
       "fly_ball": 0.046079,
-      "line_drive": 0.039962,
+      "line_drive": 0.039953,
       "popup": 0.012396
     },
     "Slow Curve": {
