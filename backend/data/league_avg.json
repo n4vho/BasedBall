@@ -1,5 +1,5 @@
 {
-  "computed_on": "2025-12-13",
+  "computed_on": "2025-12-14",
   "overall": {
     "swinging_strike": 0.110416,
     "called_strike": 0.162068,
@@ -132,13 +132,13 @@
       "popup": 0.008398
     },
     "Slider": {
-      "swinging_strike": 0.154169,
-      "called_strike": 0.14561,
-      "foul": 0.164042,
-      "ball": 0.324086,
-      "ground_ball": 0.071034,
-      "fly_ball": 0.046173,
-      "line_drive": 0.039931,
+      "swinging_strike": 0.154167,
+      "called_strike": 0.145609,
+      "foul": 0.16404,
+      "ball": 0.324083,
+      "ground_ball": 0.071043,
+      "fly_ball": 0.046172,
+      "line_drive": 0.03993,
       "popup": 0.012386
     },
     "Slow Curve": {
