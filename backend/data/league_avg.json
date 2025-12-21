@@ -1,5 +1,5 @@
 {
-  "computed_on": "2025-12-20",
+  "computed_on": "2025-12-21",
   "overall": {
     "swinging_strike": 0.110416,
     "called_strike": 0.162068,
@@ -22,11 +22,11 @@
       "popup": 0.014965
     },
     "Changeup": {
-      "swinging_strike": 0.148042,
-      "called_strike": 0.088763,
-      "foul": 0.162563,
-      "ball": 0.365192,
-      "ground_ball": 0.094353,
+      "swinging_strike": 0.14804,
+      "called_strike": 0.088762,
+      "foul": 0.162561,
+      "ball": 0.3652,
+      "ground_ball": 0.094352,
       "fly_ball": 0.042275,
       "line_drive": 0.043627,
       "popup": 0.01118
@@ -122,24 +122,24 @@
       "popup": 0.0
     },
     "Sinker": {
-      "swinging_strike": 0.055173,
-      "called_strike": 0.221605,
-      "foul": 0.186105,
-      "ball": 0.311469,
-      "ground_ball": 0.116478,
+      "swinging_strike": 0.055181,
+      "called_strike": 0.221602,
+      "foul": 0.186111,
+      "ball": 0.311463,
+      "ground_ball": 0.116476,
       "fly_ball": 0.037666,
-      "line_drive": 0.048138,
+      "line_drive": 0.048137,
       "popup": 0.008417
     },
     "Slider": {
-      "swinging_strike": 0.154237,
-      "called_strike": 0.145576,
-      "foul": 0.164097,
-      "ball": 0.32398,
-      "ground_ball": 0.07107,
+      "swinging_strike": 0.154238,
+      "called_strike": 0.145577,
+      "foul": 0.164099,
+      "ball": 0.323974,
+      "ground_ball": 0.071071,
       "fly_ball": 0.046187,
       "line_drive": 0.03996,
-      "popup": 0.012374
+      "popup": 0.012375
     },
     "Slow Curve": {
       "swinging_strike": 0.071233,
@@ -172,13 +172,13 @@
       "popup": 0.009069
     },
     "Sweeper": {
-      "swinging_strike": 0.136311,
-      "called_strike": 0.161909,
-      "foul": 0.154735,
-      "ball": 0.354295,
-      "ground_ball": 0.056591,
-      "fly_ball": 0.050756,
-      "line_drive": 0.036465,
+      "swinging_strike": 0.136309,
+      "called_strike": 0.161906,
+      "foul": 0.154751,
+      "ball": 0.354288,
+      "ground_ball": 0.05659,
+      "fly_ball": 0.050755,
+      "line_drive": 0.036464,
       "popup": 0.015496
     },
     "Unknown": {
